@@ -1,0 +1,219 @@
+$font-stack: Helvetica, sans-serif;
+$warna-dasar-web: black;
+$warna-dasar-mobile: white;
+$pemisah-text: 10px;
+$kapital-text: uppercase;
+$ukuran-text: 15px;
+$warna-navbar: grey;
+$transparan: 0.5;
+$padding-tentang: 300px;
+
+// WEB VERSION
+body {
+  font: 100% $font-stack;
+  color: $warna-dasar-mobile;
+}
+
+// navbar
+.navbar {
+  font-size: $ukuran-text;
+}
+
+.nav-link {
+  text-transform: $kapital-text;
+  margin-right: $pemisah-text;
+  font-size: $ukuran-text;
+}
+
+.nav-link:hover::after {
+  content: "";
+  display: block;
+  border-bottom: 3px solid blue;
+  width: 50%;
+  margin: auto;
+  padding-bottom: 5px;
+  margin-bottom: -8px;
+}
+// akhir navbar
+
+// tentang
+.container-tentang {
+  padding-left: $padding-tentang;
+  padding-right: $padding-tentang;
+  padding-top: 50px;
+}
+
+.container-perkenalan {
+  padding-left: $padding-tentang;
+  padding-right: $padding-tentang;
+  padding-top: 50px;
+}
+
+.video-perkenalan {
+  border-radius: 50px;
+}
+
+.judul-perkenalan {
+  font-family: Overpass;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 34px;
+  letter-spacing: -0.5px;
+  color: #000000;
+}
+
+.deskripsi-perkenalan {
+  font-family: Overpass;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+  color: #7a7a7a;
+}
+// akhir tentang
+.container-skills {
+  background-color: rgb(71, 161, 247);
+}
+
+// skills
+.judul-skills {
+  font-family: Overpass;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 46px;
+  line-height: 64px;
+  text-align: center;
+  letter-spacing: -1.5px;
+  color: white;
+}
+
+.deskripsi-skills {
+  font-family: Overpass;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 31px;
+  text-align: center;
+  color: white;
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+.judul-keahlian-ditawarkan {
+  font-family: Overpass;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 1.08333px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.deskripsi-ditawarkan {
+  font-family: Overpass;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+  color: white;
+}
+
+.icon-skills {
+  height: 50px;
+  width: 50px;
+  text-align: center;
+}
+
+.container-dalam-skiils {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+// akhir skills
+
+// kontak
+.container-kontak {
+  background-color: yellow;
+}
+// akhir kontak
+
+// MOBILE VERSION
+@media (max-width: 500px) {
+  // body
+  body {
+    background-color: $warna-dasar-mobile;
+  }
+  // akhir body
+
+  // navbar
+  .nav-link {
+    text-transform: $kapital-text;
+  }
+  // akhir navbar
+
+  // tentang
+  .container-tentang {
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 10px;
+  }
+
+  .container-perkenalan {
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 10px;
+  }
+
+  .video-perkenalan {
+    border-radius: 20px;
+  }
+
+  .judul-perkenalan {
+    font-family: Overpass;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 34px;
+    letter-spacing: -0.5px;
+    color: #000000;
+  }
+
+  .deskripsi-perkenalan {
+    font-family: Overpass;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 28px;
+    color: #7a7a7a;
+  }
+  // akhir tentang
+
+  // skills
+  .judul-skills {
+    font-family: Overpass;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 64px;
+    text-align: center;
+    letter-spacing: -1.5px;
+    color: #000000;
+  }
+
+  .deskripsi-skills {
+    font-family: Overpass;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 17px;
+    text-align: center;
+    color: white;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  // akhir skills
+}
